@@ -6,7 +6,7 @@ export default function Navbar() {
     const [isMenuOpen, setMenuIsOpen] = useState(false);
 
     return (
-        <nav className="fixed top-0 left-0 w-full bg-black bg-opacity-80 text-white py-4 px-8 flex justify-between items-center z-50">
+        <nav className="fixed top-0 left-0 w-full bg-black bg-opacity-70 text-white py-4 px-8 flex justify-between items-center z-50">
             {/* Logo + Title */}
             <div className="flex items-center space-x-3">
                 <img src="/assets/logo.svg" alt="Logo" className="w-8 h-8" />
@@ -30,11 +30,11 @@ export default function Navbar() {
                 <Link href="#about" className="block py-4 w-full text-center hover:text-purple-400">
                     About
                 </Link>
-                <Link href="#tech" className="block py-4 w-full text-center hover:text-purple-400">
-                    Tech
-                </Link>
                 <Link href="#works" className="block py-4 w-full text-center hover:text-purple-400">
                     Work
+                </Link>
+                <Link href="#tech" className="block py-4 w-full text-center hover:text-purple-400">
+                    Tech
                 </Link>
                 <Link href="#contact" className="block py-4 w-full text-center hover:text-purple-400">
                     Contact
