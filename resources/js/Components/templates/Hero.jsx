@@ -33,7 +33,7 @@ export default function Hero() {
         },
         { title: "LinkedIn", icon: (
             <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-          ), href: "linkedin.com/in/reza-chairul6",
+          ), href: "https://www.linkedin.com/in/reza-chairul6",
         },
         { title: "GitHub", icon: (
             <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
@@ -45,15 +45,15 @@ export default function Hero() {
         },
     ];
     return (
-        <section className="h-screen flex flex-col justify-center items-center text-center bg-black text-white px-4">
+        <section className="h-[32rem] flex flex-col justify-center items-center text-center bg-black text-white px-4">
             <img src="/assets/logo.svg" className="mx-auto w-20" />
             <TextRevealCard
                 text="Hi, I'm Cobra Developer"
                 revealText="Hi, I'm CobraDev"
                 className="font-sans" >
             </TextRevealCard>            
-            <TypewriterEffectSmooth words={words} className="font-sans mb-16" />
-            <FloatingDock mobileClassName="translate-y-20" items={links} />
+            <TypewriterEffectSmooth words={words} className="font-sans mb-20" />
+            <FloatingDock mobileClassName="translate-y-20" className="mb-14" items={links} />
         </section>
     );
 }
