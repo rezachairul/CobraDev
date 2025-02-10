@@ -15,7 +15,7 @@ export default function Contact() {
         </div>
 
         {/* Contact */}
-        <h2 className="text-6xl font-black mt-4 text-purple-500 mb-1">Contact Me</h2>
+        <h2 className="text-6xl font-black mt-4 text-white mb-1">Contact Me</h2>
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-8 p-10">
             {/* Kolom Kiri - Earth 3D */}
             <div className="w-full md:w-1/2 h-[400px] flex items-center justify-center">
