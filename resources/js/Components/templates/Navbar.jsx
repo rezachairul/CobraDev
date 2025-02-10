@@ -14,15 +14,15 @@ export default function Navbar() {
             </div>
 
             {/* Hamburger Button (Hidden on xl) */}
-            <button
+            {/* <button
                 className="xl:hidden text-3xl cursor-pointer"
                 onClick={() => setMenuIsOpen(!isMenuOpen)}
             >
                 {isMenuOpen ? <X /> : <Menu />}
-            </button>
+            </button> */}
 
             {/* Responsive Menu */}
-            <div
+            {/* <div
                 className={`absolute top-16 left-0 w-full bg-black flex flex-col items-center text-lg font-semibold transition-all duration-300 ease-in-out ${
                     isMenuOpen ? "opacity-70 visible" : "opacity-0 invisible"
                 } xl:hidden`}
@@ -39,15 +39,15 @@ export default function Navbar() {
                 <Link href="#contact" className="block py-4 w-full text-center hover:text-purple-400">
                     Contact
                 </Link>
-            </div>
+            </div> */}
 
             {/* Normal Menu (Hidden on Mobile) */}
-            <div className="hidden xl:flex space-x-6">
+            {/* <div className="hidden xl:flex space-x-6">
                 <Link href="#about" className="hover:text-purple-400">About</Link>
                 <Link href="#tech" className="hover:text-purple-400">Tech</Link>
                 <Link href="#works" className="hover:text-purple-400">Work</Link>
                 <Link href="#contact" className="hover:text-purple-400">Contact</Link>
-            </div>
+            </div> */}
         </nav>
     );
 }
