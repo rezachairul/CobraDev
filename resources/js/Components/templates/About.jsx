@@ -1,10 +1,35 @@
+import React, { useState, useEffect } from "react";
 export default function About() {
+    const [isScrolling, setIsScrolling] = useState(false);
+    
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY > 0) {
+          setIsScrolling(true);
+        } else {
+          setIsScrolling(false);
+        }
+      };
+    
+      window.addEventListener("scroll", handleScroll);
+    
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
+    
+    const textColor = isScrolling ? "text-white" : "text-gray-500";
     return (
-        <section id="about" className="py-16 bg-gray-900 text-white text-center">
-            <h2 className="text-3xl font-bold text-purple-400">About Me</h2>
-            <p className="mt-4 px-6 md:px-16 lg:px-32">
-                I am a passionate full-stack developer with experience in modern web technologies.
-            </p>
-        </section>
+    <section id="about" className="h-[32rem] flex items-center justify-center bg-black">
+      <div className="max-w-4xl px-4">
+        <h1 className={`text-6xl font-bold mb-4 text-white`}>About Me</h1>
+        <p className={`text-lg leading-relaxed text-white`}>
+          Hi there! 👋 I'm Reza Chairul Manam, I'm currently living in Lampung, Indonesia. 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, odit dignissimos
+          Vitae rerum accusamus, cum dignissimos culpa laudantium tempore nostrum praesentium
+          reiciendis blanditiis dicta veritatis consequuntur consectetur aliquam doloribus corporis.
+        </p>
+      </div>
+    </section>
     );
 }
