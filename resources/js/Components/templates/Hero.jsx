@@ -10,6 +10,7 @@ import {
     IconBrandGithub,
     IconFileCv,
 } from "@tabler/icons-react";
+import {ScrollVelocity} from '../ui/scrollVelocity';
 
 export default function Hero() {
     const words = [
@@ -44,16 +45,30 @@ export default function Hero() {
           ), href: "#",
         },
     ];
+    const velocity = 50;
     return (
         <section className="h-[32rem] flex flex-col justify-center items-center text-center bg-black text-white px-4">
-            <img src="/assets/logo.svg" className="mx-auto w-20" />
+          <div className="mt-40">
+            <img src="/assets/logo-cobra.svg" alt="Logo from freepik" className="mx-auto w-20" />
+          </div>
             <TextRevealCard
                 text="Hi, I'm Cobra Developer"
                 revealText="Hi, I'm CobraDev"
                 className="font-sans" >
-            </TextRevealCard>            
+            </TextRevealCard>
             <TypewriterEffectSmooth words={words} className="font-sans mb-20" />
             <FloatingDock mobileClassName="translate-y-20" className="mb-14" items={links} />
+
+          {/* ScrollVelocity */}
+          {/* <div className="relative overflow-hidden w-full">
+            <ScrollVelocity 
+              texts={['CobraDev']}
+              velocity={velocity} 
+              className="custom-scroll-text text-white"
+            />
+          </div> */}
+          {/* <div className="w-screen mt-5">
+          </div> */}
         </section>
     );
 }
