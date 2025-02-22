@@ -23,7 +23,7 @@ export default function Resume() {
         <section id="Resume" className="py-16 bg-black text-white">
             {/* Header */}
             <div className="max-w-4xl mx-auto px-6">
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center border-b pb-4">
                     <a href="/" className="text-gray-200 flex items-center gap-2 hover:text-purple-500">
                         <IconArrowLeft size={20} />
                         Back Home
@@ -40,7 +40,7 @@ export default function Resume() {
                 </div>
 
                 {/* Nama dan Kontak */}
-                <div className="text-center mt-8">
+                <div className="text-center mt-5">
                     <h1 className="text-4xl font-bold">REZA CHAIRUL MANAM</h1>
                     {/* Alamat */}
                     <div className="flex justify-center items-center gap-6 mt-2 text-base">
@@ -100,11 +100,16 @@ export default function Resume() {
                 {/* Education Section */}
                 <div className="mt-8">
                     <h3 className="text-2xl font-bold border-b pb-2">EDUCATION</h3>
-                    <p className="font-semibold mt-2">Bachelor’s Degree – Informatics Engineering</p>
-                    <p className="text-gray-700">Institut Teknologi Sumatera, Lampung | <span className="font-semibold">2020 – 2026</span></p>
-                    <p className="text-gray-700">GPA: 3.00/4.00 scale</p>
-                    <p className="text-gray-700">
-                        Final Thesis: WebGIS-Based Heavy Equipment Distribution Point Information System Design Using Agile LSD Method.
+                    <div className="flex justify-between text-gray-300">
+                        <div>
+                            <span className="font-semibold">Bachelor’s Degree – Informatics Engineering</span><br />
+                            Institut Teknologi Sumatera, Lampung<br />
+                            GPA: 3.00/4.00 scale
+                        </div>
+                        <span className="font-semibold">2020 – 2026</span>
+                    </div>
+                    <p className="mt-2 text-gray-300 italic">
+                        Final Thesis: WebGIS-Based Heavy Equipment Distribution Point Information System Design Using Agile LSD Method, Case Study: PT. Fajar Anugerah Dinamika.
                     </p>
                 </div>
 
@@ -133,12 +138,136 @@ export default function Resume() {
                 {/* Organizational Experience Section */}
                 <div className="mt-8">
                     <h3 className="text-2xl font-bold border-b pb-2">ORGANIZATIONAL EXPERIENCE</h3>
-                    <ul className="mt-2 text-gray-700">
-                        <li><span className="font-semibold">Unit Kegiatan Mahasiswa Bidang Seni Musik ITERA</span> | Ketua Umum (Feb 2023 - Feb 2024)</li>
-                        <li><span className="font-semibold">Unit Kegiatan Mahasiswa Bidang Seni Musik ITERA</span> | Kepala Departemen Eksternal (Feb 2022 - Feb 2023)</li>
-                        <li><span className="font-semibold">Himpunan Mahasiswa Teknik Informatika ITERA</span> | Staff Magang M-Rakyat HMIF (Jul 2022)</li>
-                        <li><span className="font-semibold">Himpunan Mahasiswa Teknik Informatika ITERA</span> | Ketua Pelaksana Funcoastic HMEI (Jun 2022)</li>
+                    <ul className="mt-2 text-gray-400">
+                        <li className="flex justify-between">
+                            <span>
+                                <span className="font-semibold text-gray-300">Unit Kegiatan Mahasiswa Bidang Seni Musik ITERA</span><br />
+                                Ketua Umum
+                            </span>
+                            <span className="font-semibold text-gray-300">Feb 2023 - Feb 2024</span>
+                        </li>
+                        <li className="flex justify-between">
+                            <span>
+                                <span className="font-semibold text-gray-300">Unit Kegiatan Mahasiswa Bidang Seni Musik ITERA</span><br />
+                                Kepala Departemen Eksternal
+                            </span>
+                            <span className="font-semibold text-gray-300">Feb 2022 - Feb 2023</span>
+                        </li>
+                        <li className="flex justify-between">
+                            <span>
+                                <span className="font-semibold text-gray-300">Himpunan Mahasiswa Teknik Informatika ITERA</span><br />
+                                Staff Magang M-Rakyat HMIF
+                            </span>
+                            <span className="font-semibold text-gray-300">Jul 2022</span>
+                        </li>
+                        <li className="flex justify-between">
+                            <span>
+                                <span className="font-semibold text-gray-300">Himpunan Mahasiswa Teknik Informatika ITERA</span><br />
+                                Ketua Pelaksana Funcoastic HMEI
+                            </span>
+                            <span className="font-semibold text-gray-300">Jun 2022</span>
+                        </li>
                     </ul>
+                </div>
+                
+                {/* Training And Certification */}
+                <div className="mt-8">
+                    <h3 className="text-2xl font-bold border-b pb-2">TRAINING AND CERTIFICATION</h3>
+                    <ul className="mt-2 text-gray-300">
+                        <li className="flex justify-between">
+                            <span>Certified WebGIS Developer</span>
+                            <span>ESRI (2024)</span>
+                        </li>
+                        <li className="flex justify-between">
+                            <span>Laravel & React Full-Stack Development</span>
+                            <span>Udemy (2023)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                {/* Publication */}
+                <div className="mt-8">
+                    <h3 className="text-2xl font-bold border-b pb-2">PUBLICATION</h3>
+                    <ul className="mt-2 text-gray-300">
+                        <li className="flex justify-between">
+                            <span>"WebGIS-Based Heavy Equipment Tracking"</span>
+                            <span>ITERA Journal (2025)</span>
+                        </li>
+                        <li className="flex justify-between">
+                            <span>"Optimizing Agile LSD for Geospatial Data"</span>
+                            <span>National Conference (2024)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                {/* Languages */}
+                <div className="mt-8">
+                    <h3 className="text-2xl font-bold border-b pb-2">LANGUAGES</h3>
+                    <ul className="mt-2 text-gray-300">
+                        <li className="flex justify-between">
+                            <span>English</span>
+                            <span>Intermediate (TOEFL Prediction Test score xxx)</span>
+                        </li>
+                        <li className="flex justify-between">
+                            <span>Indonesian</span>
+                            <span>Native</span>
+                        </li>
+                    </ul>
+                </div>
+
+                {/* Skills */}
+                <div className="mt-8">
+                    <h3 className="text-2xl font-bold border-b pb-2">SKILLS</h3>
+                    <div className="overflow-x-auto mt-4">
+                        <table className="w-full border-collapse border border-gray-800 text-gray-300">
+                            <thead>
+                                <tr className="bg-gray-800">
+                                    <th className="border border-gray-600 px-4 py-2">Hard Skill</th>
+                                    <th className="border border-gray-600 px-4 py-2">Soft Skill</th>
+                                    <th className="border border-gray-600 px-4 py-2">Measurement Unit</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td className="border border-gray-600 px-4 py-2">
+                                        <span className="font-semibold">Advance in:</span>
+                                        <ul className="list-disc list-inside">
+                                            <li>WebGIS Development (Laravel, Leaflet, OpenLayers)</li>
+                                            <li>Full-Stack Web Development (Laravel, React, PostgreSQL, Tailwind CSS)</li>
+                                        </ul>
+                                        <span className="font-semibold">Intermediate in:</span>
+                                        <ul className="list-disc list-inside">
+                                            <li>Geospatial Data Processing</li>
+                                            <li>Graphic Design & Video Editing</li>
+                                        </ul>
+                                    </td>
+                                    <td className="border border-gray-600 px-4 py-2">
+                                        <ul className="list-disc list-inside">
+                                            <li>Leadership</li>
+                                            <li>Teamwork</li>
+                                            <li>Communication</li>
+                                            <li>Adaptability</li>
+                                            <li>Hard worker & Persistence</li>
+                                        </ul>
+                                    </td>
+                                    <td className="border border-gray-600 px-4 py-2">
+                                        <ul className="list-disc list-inside">
+                                            <li>Project Experience</li>
+                                            <li>Problem-Solving Ability</li>
+                                            <li>Certifications</li>
+                                            <li>Team Collaboration</li>
+                                            <li>Self-Learning Initiative</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                {/* End of resume */}
+                <div className="mt-8">
+                    <h3 className="text-2xl font-bold border-b pb-2"></h3>
                 </div>
 
                 {/* Footer */}
