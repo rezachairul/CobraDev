@@ -8,6 +8,9 @@ use Inertia\Inertia;
 Route::get('/', function () {
     return Inertia::render('CobraDev');
 });
+Route::get('/Resume', function () {
+    return Inertia::render('Resume');
+});
 
 Route::get('/welcome', function () {
     return Inertia::render('Welcome', [

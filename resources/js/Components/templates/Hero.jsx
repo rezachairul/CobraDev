@@ -12,6 +12,7 @@ import {
 } from "@tabler/icons-react";
 import {ScrollVelocity} from '../ui/scrollVelocity';
 
+
 export default function Hero() {
     const words = [
         { text: "I" },
@@ -42,7 +43,7 @@ export default function Hero() {
         },
         { title: "Resume", icon: (
             <IconFileCv className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-          ), href: "#",
+          ), href: "/resume",
         },
     ];
     const velocity = 50;

@@ -6,7 +6,7 @@ import Works from '@/components/templates/Works';
 import Tech from '@/components/templates/Tech';
 import Skill from '@/components/templates/Skill';
 import Contact from '@/components/templates/Contact';
-import Resume from '@/components/templates/Resume';
+import Resume from '@/Pages/Resume';
 
 import SplashCursor from '../Components/ui/SplashCursor'
 
@@ -24,6 +24,7 @@ export default function CobraDev() {
             <Tech />
             <Skill />
             <Contact />
+            <Resume />
         </>
     );
 }
