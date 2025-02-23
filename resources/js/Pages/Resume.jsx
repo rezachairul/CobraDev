@@ -14,6 +14,7 @@ import {
     IconBrandGithub,
     IconCopyright,
 } from "@tabler/icons-react";
+import SplashCursor from '../Components/ui/SplashCursor';
 
 export default function Resume() {
     useEffect(() => {
@@ -22,6 +23,7 @@ export default function Resume() {
 
     return (
         <section id="Resume" className="py-16 bg-black text-white">
+            <SplashCursor />
             {/* Header */}
             <div className="max-w-4xl mx-auto px-6">
                 <div className="flex justify-between items-center border-b pb-4">
@@ -52,7 +54,7 @@ export default function Resume() {
                     </div>
                     {/* Kontak */}
                     <div className="flex justify-center items-center gap-6 mt-2 text-lg">
-                        <a href="wa.me/6288269620552" className="flex items-center gap-2">
+                        <a href="https://wa.me/6288269620552" className="flex items-center gap-2">
                             <IconPhoneCall size={20} className="text-red-500" />
                             <span>+62 882 6962 0552</span>
                         </a>
@@ -272,7 +274,7 @@ export default function Resume() {
                 </div>
 
                 {/* Copyright Section */}
-                <div className="mt-8 text-center text-gray-400 border-t pt-4">
+                <div className="mt-8 text-center text-gray-400">
                     <p className="flex justify-center items-center gap-1">
                         <IconCopyright size={16} /> {new Date().getFullYear()} <span className="text-purple-900 font-semibold hover:text-purple-700"><a href="/">CobraDev</a></span> All Rights Reserved.
                     </p>
