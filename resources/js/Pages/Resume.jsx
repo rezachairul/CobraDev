@@ -12,6 +12,7 @@ import {
     IconBrandInstagram,
     IconBrandLinkedin,
     IconBrandGithub,
+    IconCopyright,
 } from "@tabler/icons-react";
 
 export default function Resume() {
@@ -270,10 +271,12 @@ export default function Resume() {
                     <h3 className="text-2xl font-bold border-b pb-2"></h3>
                 </div>
 
-                {/* Footer */}
-                <p className="mt-10 text-center text-gray-600">
-                    Copyright <span className="text-purple-500"><a href="/">CobraDev 2025</a></span> All rights reserved.
-                </p>
+                {/* Copyright Section */}
+                <div className="mt-8 text-center text-gray-400 border-t pt-4">
+                    <p className="flex justify-center items-center gap-1">
+                        <IconCopyright size={16} /> {new Date().getFullYear()} <span className="text-purple-900 font-semibold hover:text-purple-700"><a href="/">CobraDev</a></span> All Rights Reserved.
+                    </p>
+                </div>
             </div>
         </section>
     );

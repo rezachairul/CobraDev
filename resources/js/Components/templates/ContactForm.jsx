@@ -5,17 +5,17 @@ const ContactForm = () => {
         <form className="mt-4 space-y-4">
           {/* Nama */}
           <div>
-            <label className="block text-black text-left m-1 font-medium">Nama</label>
+            <label className="block text-white text-left m-1 font-medium">Nama</label>
             <input type="text" className="w-full px-3 py-2 border text-black rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400" placeholder="Masukkan nama Anda" />
           </div>
           {/* Email */}
           <div>
-            <label className="block text-black text-left m-1 font-medium">Email</label>
+            <label className="block text-white text-left m-1 font-medium">Email</label>
             <input type="email" className="w-full px-3 py-2 border text-black rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400" placeholder="example@gmail.com" />
           </div>
           {/* Pesan */}
           <div>
-            <label className="block text-black text-left m-1 font-medium">Message</label>
+            <label className="block text-white text-left m-1 font-medium">Message</label>
             <textarea className="w-full px-3 py-2 border text-black rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400" rows="4" placeholder="Tulis pesan Anda..." ></textarea>
           </div>
   

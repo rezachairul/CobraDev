@@ -24,7 +24,6 @@ export default function CobraDev() {
             <Tech />
             <Skill />
             <Contact />
-            <Resume />
         </>
     );
 }

@@ -4,6 +4,7 @@ import {OrbitControls} from "@react-three/drei";
 import Earth from "../canvas/Earth";
 import Stars from "../canvas/Stars";
 import ContactForm from "./ContactForm";
+import { IconCopyright } from "@tabler/icons-react";
 
 export default function Contact() {
   const [count, setCount] = useState(0);
@@ -34,9 +35,12 @@ export default function Contact() {
                 <ContactForm />
             </div>
         </div>
-        <p className="mt-2 text-center text-white">
-            Copyright CobraDev 2025 All rights reserved.
-        </p>
+        {/* Copyright Section */}
+        <div className="mt-8 text-center text-gray-400">
+            <p className="flex justify-center items-center gap-1">
+                <IconCopyright size={16} /> {new Date().getFullYear()} <span className="text-purple-900 font-semibold hover:text-purple-700"><a href="/">CobraDev</a></span> All Rights Reserved.
+            </p>
+        </div>
     </section>
   );
 }
