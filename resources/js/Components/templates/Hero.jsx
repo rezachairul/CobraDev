@@ -43,7 +43,7 @@ export default function Hero() {
         },
         { title: "Resume", icon: (
             <IconFileCv className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-          ), href: "/resume",
+          ), href: "/Resume",
         },
     ];
     const velocity = 50;

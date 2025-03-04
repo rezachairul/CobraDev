@@ -23,7 +23,7 @@ export default function Resume() {
 
     return (
         <section id="Resume" className="py-16 bg-black text-white">
-            <SplashCursor />
+            {/* <SplashCursor /> */}
             {/* Header */}
             <div className="max-w-4xl mx-auto px-6">
                 <div className="flex justify-between items-center border-b pb-4">
@@ -35,7 +35,7 @@ export default function Resume() {
                     <a 
                         href="/assets/CV_RezaChairul.pdf" 
                         download="Reza_Chairul_Manam_CV.pdf" 
-                        className="px-6 py-2 border-purple-700 text-purple-700 border-2 rounded-lg hover:border-purple-500 hover:text-purple-500 flex items-center gap-2"
+                        className="px-6 py-2 border-purple-700 text-purple-700 border-2 rounded-lg hover:border-purple-500 hover:bg-purple-500 hover:text-white flex items-center gap-2"
                     >
                         <IconDownload size={20} />
                         Download
