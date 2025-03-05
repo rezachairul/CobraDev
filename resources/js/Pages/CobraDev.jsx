@@ -8,14 +8,14 @@ import Skill from '@/components/templates/Skill';
 import Contact from '@/components/templates/Contact';
 import Resume from '@/Pages/Resume';
 
-import SplashCursor from '../Components/ui/SplashCursor'
+import SplashCursor from '../Components/ui/SplashCursor';
 
 
 
 export default function CobraDev() {
     return (
         <>
-            <SplashCursor />
+            {/* <SplashCursor /> */}
             <Head title="Home"/>
             <Navbar />
             <Hero />
