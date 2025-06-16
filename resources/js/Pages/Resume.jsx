@@ -1,7 +1,5 @@
 import React from "react";
-import { 
-    useEffect 
-} from "react";
+import { Head } from '@inertiajs/react';
 
 import { 
     IconArrowLeft,
@@ -17,12 +15,10 @@ import {
 import SplashCursor from '../Components/ui/SplashCursor';
 
 export default function Resume() {
-    useEffect(() => {
-        document.title = "Resume | CobraDev";
-    }, []);
 
     return (
         <section id="Resume" className="py-16 bg-black text-white">
+            <Head title="Resume" />
             {/* <SplashCursor /> */}
             {/* Header */}
             <div className="max-w-4xl mx-auto px-6">
