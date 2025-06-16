@@ -12,7 +12,6 @@ import {
     IconBrandGithub,
     IconCopyright,
 } from "@tabler/icons-react";
-import SplashCursor from '../Components/ui/SplashCursor';
 
 export default function Resume() {
 

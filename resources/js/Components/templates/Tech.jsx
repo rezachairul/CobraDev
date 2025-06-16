@@ -1,3 +1,4 @@
+import React from 'react';
 export default function Tech() {
     return (
         <section id="tech" className="py-16 bg-black text-white text-center">

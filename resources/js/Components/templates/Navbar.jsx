@@ -1,53 +1,68 @@
 import { useState } from "react";
-import { Link } from "@inertiajs/react";
-import { Menu, X } from "lucide-react"; // Pastikan lucide-react sudah diinstall
+import { Link as ScrollLink } from "react-scroll";
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
     const [isMenuOpen, setMenuIsOpen] = useState(false);
 
+    const toggleMenu = () => setMenuIsOpen(!isMenuOpen);
+
+    const navItems = [
+        { label: "About", to: "about" },
+        { label: "Works", to: "works" },
+        { label: "Skill", to: "skill" },
+        { label: "Contact", to: "contact" },
+    ];
+
     return (
-        <nav className="fixed top-0 left-0 w-screen bg-black bg-opacity-70 text-white py-4 px-8 flex justify-between items-center z-50">
-            {/* Logo + Title */}
-            <div className="flex items-center space-x-3">
-                <img src="/assets/logo-cobradev.svg" alt="Logo from freepik" className="w-8 h-8" />
-                <h1 className="text-2xl font-bold text-white">CobraDev</h1>
+        <nav className="fixed top-0 left-0 w-full bg-black bg-opacity-70 backdrop-blur-sm text-white px-6 py-4 z-50 shadow-md">
+            <div className="max-w-7xl mx-auto flex justify-between items-center">
+                {/* Logo */}
+                <div className="flex items-center space-x-3">
+                    <img src="/assets/logo-cobradev.svg" alt="Logo" className="w-8 h-8" />
+                    <h1 className="text-2xl font-bold">CobraDev</h1>
+                </div>
+
+                {/* Desktop Nav */}
+                <ul className="hidden md:flex space-x-8 font-medium text-lg">
+                    {navItems.map((item) => (
+                        <li key={item.to}>
+                            <ScrollLink
+                                to={item.to}
+                                smooth={true}
+                                duration={500}
+                                className="cursor-pointer hover:text-purple-400 transition-colors"
+                            >
+                                {item.label}
+                            </ScrollLink>
+                        </li>
+                    ))}
+                </ul>
+
+                {/* Mobile Menu Button */}
+                <button onClick={toggleMenu} className="md:hidden focus:outline-none">
+                    {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
+                </button>
             </div>
 
-            {/* Hamburger Button (Hidden on xl) */}
-            {/* <button
-                className="xl:hidden text-3xl cursor-pointer"
-                onClick={() => setMenuIsOpen(!isMenuOpen)}
-            >
-                {isMenuOpen ? <X /> : <Menu />}
-            </button> */}
-
-            {/* Responsive Menu */}
-            {/* <div
-                className={`absolute top-16 left-0 w-full bg-black flex flex-col items-center text-lg font-semibold transition-all duration-300 ease-in-out ${
-                    isMenuOpen ? "opacity-70 visible" : "opacity-0 invisible"
-                } xl:hidden`}
-            >
-                <Link href="#about" className="block py-4 w-full text-center hover:text-purple-400">
-                    About
-                </Link>
-                <Link href="#works" className="block py-4 w-full text-center hover:text-purple-400">
-                    Work
-                </Link>
-                <Link href="#tech" className="block py-4 w-full text-center hover:text-purple-400">
-                    Tech
-                </Link>
-                <Link href="#contact" className="block py-4 w-full text-center hover:text-purple-400">
-                    Contact
-                </Link>
-            </div> */}
-
-            {/* Normal Menu (Hidden on Mobile) */}
-            {/* <div className="hidden xl:flex space-x-6">
-                <Link href="#about" className="hover:text-purple-400">About</Link>
-                <Link href="#tech" className="hover:text-purple-400">Tech</Link>
-                <Link href="#works" className="hover:text-purple-400">Work</Link>
-                <Link href="#contact" className="hover:text-purple-400">Contact</Link>
-            </div> */}
+            {/* Mobile Menu */}
+            {isMenuOpen && (
+                <div className="md:hidden mt-4 bg-black bg-opacity-90 rounded-lg p-4 space-y-4">
+                    {navItems.map((item) => (
+                        <ScrollLink
+                            key={item.to}
+                            to={item.to}
+                            smooth={true}
+                            duration={500}
+                            offset={-70}
+                            onClick={() => setMenuIsOpen(false)}
+                            className="block text-center text-lg font-semibold text-white hover:text-purple-400 transition-colors"
+                        >
+                            {item.label}
+                        </ScrollLink>
+                    ))}
+                </div>
+            )}
         </nav>
     );
 }

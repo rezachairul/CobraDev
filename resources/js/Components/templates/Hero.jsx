@@ -17,7 +17,7 @@ export default function Hero() {
     const words = [
         { text: "I" },
         { text: "Develop" },
-        { text: "Attractive," },
+        { text: "GIS," },
         { text: "User Interfaces &" },
         { 
         text: "Web Applications.",
