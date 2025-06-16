@@ -9,7 +9,7 @@ export default function Navbar() {
         <nav className="fixed top-0 left-0 w-screen bg-black bg-opacity-70 text-white py-4 px-8 flex justify-between items-center z-50">
             {/* Logo + Title */}
             <div className="flex items-center space-x-3">
-                <img src="/assets/logo-cobra.svg" alt="Logo from freepik" className="w-8 h-8" />
+                <img src="/assets/logo-cobradev.svg" alt="Logo from freepik" className="w-8 h-8" />
                 <h1 className="text-2xl font-bold text-white">CobraDev</h1>
             </div>
 

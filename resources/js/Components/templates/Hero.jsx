@@ -50,11 +50,11 @@ export default function Hero() {
     return (
         <section className="h-[32rem] flex flex-col justify-center items-center text-center bg-black text-white px-4">
           <div className="mt-40">
-            <img src="/assets/logo-cobra.svg" alt="Logo from freepik" className="mx-auto w-20" />
+            <img src="/assets/logo-cobradev.svg" alt="Logo from freepik" className="mx-auto w-20" />
           </div>
             <TextRevealCard
                 text="Hi, I'm Cobra Developer"
-                revealText="Hi, I'm CobraDev"
+                revealText="Hi, I'm Reza Chairul"
                 className="font-sans" >
             </TextRevealCard>
             <TypewriterEffectSmooth words={words} className="font-sans mb-20" />
