@@ -70,6 +70,8 @@ export const ScrollVelocity = ({
       velocityMapping?.output || [0, 5],
       { clamp: false }
     );
+    const scale = useTransform(velocityFactor, [-5, 0, 5], [1.05, 1, 1.05]);
+    const rotate = useTransform(velocityFactor, [-5, 0, 5], [-10, 0, 10]);
 
     const copyRef = useRef(null);
     const copyWidth = useElementWidth(copyRef);
@@ -119,7 +121,7 @@ export const ScrollVelocity = ({
       >
         <motion.div
           className={`${scrollerClassName} w-screen whitespace-nowrap text-center font-sans text-4xl font-bold tracking-[-0.02em] drop-shadow md:text-[5rem] md:leading-[5rem]`}
-          style={{ x, ...scrollerStyle }}
+          style={{ x, rotate, scale, ...scrollerStyle }}
         >
           {spans}
         </motion.div>
