@@ -28,7 +28,7 @@ export const Timeline = ({
     (<div
       className="w-full bg-white dark:bg-black font-sans md:px-10"
       ref={containerRef}>
-      <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
+      {/* <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
         <h2 className="text-lg md:text-6xl mb-2 text-black dark:text-white max-w-4xl text-left">
           My Project's
         </h2>
@@ -36,7 +36,7 @@ export const Timeline = ({
           Here are some of the projects I have worked on.
           Timeline of my Work Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugiat quas possimus in pariatur! Voluptatibus, quasi tempore. Alias eius dicta reiciendis corrupti commodi sequi aspernatur non quaerat vel. Animi, enim!.
         </p>
-      </div>
+      </div> */}
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
         {data.map((item, index) => (
           <div key={index} className="flex justify-start md:pt-40 md:gap-10">

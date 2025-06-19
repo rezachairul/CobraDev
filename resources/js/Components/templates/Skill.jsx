@@ -43,7 +43,7 @@ export default function Skill() {
     return (
         <section id="skill" className="py-16 px-6 bg-black text-white text-center">
             <BlurText
-                text="Skill's"
+                text="Skills"
                 delay={150}
                 animateBy="words"
                 direction="top"

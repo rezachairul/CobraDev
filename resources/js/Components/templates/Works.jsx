@@ -1,6 +1,12 @@
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 
+import BlurText from "../ui/BlurText";
+
+const handleAnimationComplete = () => {
+  console.log('Animation completed!');
+};
+
 export default function Works() {
     const data = [
         {
@@ -71,8 +77,17 @@ export default function Works() {
       ];
     return (
         <section id="works" className="py-16  bg-black text-white text-center">
-            {/* <h2 className="text-3xl font-bold text-purple-400">My Works</h2>
-            <p className="mt-4">Here are some of the projects I have worked on.</p> */}
+          <BlurText
+                text="Works"
+                delay={150}
+                animateBy="words"
+                direction="top"
+                onAnimationComplete={handleAnimationComplete}
+                className="text-5xl font-bold mb-6 text-white"
+            />
+            <p className="max-w-2xl mx-auto text-gray-300">
+                Every project I work on is a combination of problem solving and visual touch. These are the works that reflect my interests and expertise in the world of technology.
+            </p>
             <Timeline data={data} />
         </section>
     );

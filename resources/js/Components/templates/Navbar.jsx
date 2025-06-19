@@ -10,8 +10,8 @@ export default function Navbar() {
     const navItems = [
         { label: "About", to: "about" },
         { label: "Works", to: "works" },
-        { label: "Skill", to: "skill" },
-        { label: "Contact", to: "contact" },
+        { label: "Skills", to: "skill" },
+        { label: "Contact Me", to: "contact" },
     ];
 
     return (
