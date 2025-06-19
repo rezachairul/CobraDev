@@ -19,7 +19,7 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto flex justify-between items-center">
                 {/* Logo */}
                 <div className="flex items-center space-x-3">
-                    <img src="/assets/logo-cobradev.svg" alt="Logo" className="w-8 h-8" />
+                    <img src="/assets/img/logo-cobradev.svg" alt="Logo" className="w-8 h-8" />
                     <h1 className="text-2xl font-bold">CobraDev</h1>
                 </div>
 

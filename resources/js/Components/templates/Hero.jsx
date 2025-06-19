@@ -57,7 +57,7 @@ export default function Hero() {
     <section className="min-h-screen overflow-x-hidden flex flex-col justify-center items-center text-center bg-black text-white px-4 py-16">
       <div className="mt-6 md:mt-16">
         <img
-          src="/assets/logo-cobradev.svg"
+          src="/assets/img/logo-cobradev.svg"
           alt="Logo from freepik"
           className="mx-auto w-16 md:w-20"
         />
