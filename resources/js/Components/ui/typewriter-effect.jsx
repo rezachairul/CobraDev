@@ -17,18 +17,36 @@ export const TypewriterEffect = ({
     };
   });
   const [scope, animate] = useAnimate();
-  const isInView = useInView(scope);
+  const isInView = useInView(scope, {
+    triggerOnce: false, // ← penting, biar bisa animasi tiap kali discroll
+    margin: "-20% 0px", // opsional: animasi dimulai sebelum elemen 100% kelihatan
+  });
+
   useEffect(() => {
     if (isInView) {
-      animate("span", {
-        display: "inline-block",
-        opacity: 1,
-        width: "fit-content",
-      }, {
-        duration: 0.3,
-        delay: stagger(0.1),
-        ease: "easeInOut",
-      });
+      animate(
+        "span",
+        {
+          display: "inline-block",
+          opacity: 1,
+          width: "fit-content",
+        },
+        {
+          duration: 0.3,
+          delay: stagger(0.1),
+          ease: "easeInOut",
+        }
+      );
+    } else {
+      // Reset biar bisa animasi ulang kalau keluar viewport
+      animate(
+        "span",
+        {
+          opacity: 0,
+          display: "none",
+        },
+        { duration: 0.1 }
+      );
     }
   }, [isInView]);
   const renderWords = () => {
