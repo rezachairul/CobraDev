@@ -10,28 +10,28 @@ import { VscVscode } from "react-icons/vsc";
 
 export default function Skill() {
     const programmingSkills = [
-        { name: "HTML", icon: <FaHtml5 className="text-orange-500 text-3xl" /> },
-        { name: "CSS", icon: <FaCss3Alt className="text-blue-500 text-3xl" /> },
-        { name: "Bootstrap", icon: <FaBootstrap className="text-purple-500 text-3xl" /> },
-        { name: "Tailwind", icon: <SiTailwindcss className="text-sky-400 text-3xl" /> },
-        { name: "JavaScript", icon: <SiJavascript className="text-yellow-300 text-3xl" /> },
-        { name: "React JS", icon: <FaReact className="text-cyan-400 text-3xl" /> },
-        { name: "Python", icon: <FaPython className="text-yellow-300 text-3xl" /> },
-        { name: "PHP", icon: <FaPhp className="text-indigo-300 text-3xl" /> },
-        { name: "LaTeX", icon: <SiLatex className="text-white text-3xl" /> },
-        { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-300 text-3xl" /> },
-        { name: "VS Code", icon: <VscVscode className="text-blue-500 text-3xl" /> },
-        { name: "Git", icon: <FaGitAlt className="text-orange-400 text-3xl" /> },
-        { name: "GitHub", icon: <FaGithub className="text-white text-3xl" /> },
+        { name: "HTML", icon: <FaHtml5 className="text-orange-500 text-3xl" />, url: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
+        { name: "CSS", icon: <FaCss3Alt className="text-blue-500 text-3xl" />, url: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
+        { name: "Bootstrap", icon: <FaBootstrap className="text-purple-500 text-3xl" />, url: "https://getbootstrap.com/docs/" },
+        { name: "Tailwind", icon: <SiTailwindcss className="text-sky-400 text-3xl" />, url: "https://tailwindcss.com/docs" },
+        { name: "JavaScript", icon: <SiJavascript className="text-yellow-300 text-3xl" />, url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+        { name: "React JS", icon: <FaReact className="text-cyan-400 text-3xl" />, url: "https://react.dev/learn" },
+        { name: "Python", icon: <FaPython className="text-yellow-300 text-3xl" />, url: "https://docs.python.org/3/" },
+        { name: "PHP", icon: <FaPhp className="text-indigo-300 text-3xl" />, url: "https://www.php.net/docs.php" },
+        { name: "LaTeX", icon: <SiLatex className="text-white text-3xl" />, url: "https://www.latex-project.org/help/documentation/" },
+        { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-300 text-3xl" />, url: "https://www.postgresql.org/docs/" },
+        { name: "VS Code", icon: <VscVscode className="text-blue-500 text-3xl" />, url: "https://code.visualstudio.com/docs" },
+        { name: "Git", icon: <FaGitAlt className="text-orange-400 text-3xl" />, url: "https://git-scm.com/doc" },
+        { name: "GitHub", icon: <FaGithub className="text-white text-3xl" />, url: "https://docs.github.com/" },
     ];
 
     const designSkills = [
-        { name: "Fotografi", icon: <FaCameraRetro className="text-white text-3xl" /> },
-        { name: "Videografi", icon: <FaVideo className="text-white text-3xl" /> },
-        { name: "Photoshop", icon: <SiAdobephotoshop className="text-pink-500 text-3xl" /> },
-        { name: "Adobe Premiere", icon: <SiAdobepremierepro className="text-purple-400 text-3xl" /> },
-        { name: "Figma", icon: <FaFigma className="text-pink-400 text-3xl" /> },
-        { name: "Canva", icon: <SiCanva className="text-blue-300 text-3xl" /> },
+        { name: "Fotografi", icon: <FaCameraRetro className="text-white text-3xl" />, url: "#" },
+        { name: "Videografi", icon: <FaVideo className="text-white text-3xl" />, url: "#" },
+        { name: "Photoshop", icon: <SiAdobephotoshop className="text-pink-500 text-3xl" />, url: "https://helpx.adobe.com/photoshop/tutorials.html" },
+        { name: "Adobe Premiere", icon: <SiAdobepremierepro className="text-purple-400 text-3xl" />, url: "https://helpx.adobe.com/premiere-pro/tutorials.html" },
+        { name: "Figma", icon: <FaFigma className="text-pink-400 text-3xl" />, url: "https://help.figma.com/hc/en-us" },
+        { name: "Canva", icon: <SiCanva className="text-blue-300 text-3xl" />, url: "https://www.canva.com/design-school/" },
     ];
 
     return (
@@ -47,10 +47,16 @@ export default function Skill() {
                 <h3 className="text-2xl font-semibold mb-4 text-purple-400">Programming & Tools</h3>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
                     {programmingSkills.map((skill, index) => (
-                        <div key={index} className="bg-gray-800 rounded-lg py-4 px-4 text-white shadow-md flex flex-col items-center hover:scale-105 transition-transform">
+                        <a
+                            key={index}
+                            href={skill.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-gray-800 rounded-lg py-4 px-4 text-white shadow-md flex flex-col items-center hover:scale-105 transition-transform"
+                        >
                             {skill.icon}
                             <span className="mt-2 text-sm">{skill.name}</span>
-                        </div>
+                        </a>
                     ))}
                 </div>
             </div>
@@ -60,10 +66,16 @@ export default function Skill() {
                 <h3 className="text-2xl font-semibold mb-4 text-purple-400">Design & Media Editing</h3>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
                     {designSkills.map((skill, index) => (
-                        <div key={index} className="bg-gray-800 rounded-lg py-4 px-4 text-white shadow-md flex flex-col items-center hover:scale-105 transition-transform">
+                        <a
+                            key={index}
+                            href={skill.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-gray-800 rounded-lg py-4 px-4 text-white shadow-md flex flex-col items-center hover:scale-105 transition-transform"
+                        >
                             {skill.icon}
                             <span className="mt-2 text-sm">{skill.name}</span>
-                        </div>
+                        </a>
                     ))}
                 </div>
             </div>
