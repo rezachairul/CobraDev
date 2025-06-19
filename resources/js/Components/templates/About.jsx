@@ -27,10 +27,10 @@ export default function About() {
           {/* Foto / Profile Card di kiri */}
           <div className="flex-shrink-0">
             <ProfileCard
-              name="Reza Chairul Manam"
+              name="Reza Chairul"
               title="GIS Engineer"
               handle="ITERA"
-              status="Online"
+              status="WebGIS"
               contactText="Contact Me"
               avatarUrl="/assets/img/Profile.png"
               showUserInfo={true}
