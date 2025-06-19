@@ -15,14 +15,16 @@ import {ScrollVelocity} from '../ui/scrollVelocity';
 
 export default function Hero() {
     const words = [
-        { text: "I" },
-        { text: "Develop" },
-        { text: "GIS," },
-        { text: "User Interfaces &" },
-        { 
-        text: "Web Applications.",
+      { text: "I" },
+      { text: "Specialize" },
+      { text: "in" },
+      { 
+        text: "Geographic Information Systems (GIS),", 
         className: "text-purple-500 dark:text-purple-500",
-        },
+      },
+      { text: "Design" },
+      { text: "Intuitive User Interfaces," },
+      { text: "and Build Modern Web Applications." },
     ];
     const links = [
         { title: "Email", icon: (

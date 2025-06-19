@@ -8,6 +8,12 @@ import {
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
+import BlurText from "../ui/BlurText";
+
+const handleAnimationComplete = () => {
+  console.log('Animation completed!');
+};
+
 export default function Skill() {
     const programmingSkills = [
         { name: "HTML", icon: <FaHtml5 className="text-orange-500 text-3xl" />, url: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
@@ -36,7 +42,14 @@ export default function Skill() {
 
     return (
         <section id="skill" className="py-16 px-6 bg-black text-white text-center">
-            <h2 className="text-5xl font-bold mb-6 text-white">Skill</h2>
+            <BlurText
+                text="Skill's"
+                delay={150}
+                animateBy="words"
+                direction="top"
+                onAnimationComplete={handleAnimationComplete}
+                className="text-5xl font-bold mb-6 text-white"
+            />
             <p className="max-w-2xl mx-auto text-gray-300">
                 I have experience in web programming, particularly in the field of WebGIS,
                 as well as skills in visual design and media processing. Below are the tools and technologies I frequently use:

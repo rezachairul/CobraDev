@@ -1,12 +1,26 @@
 "use client";
 import React from "react";
 
+import BlurText from "../ui/BlurText";
+
+const handleAnimationComplete = () => {
+  console.log('Animation completed!');
+};
+
+
 export default function About() {
   return (
     <section id="about" className="min-h-screen flex flex-col items-center justify-center bg-black py-16">
       {/* About Me Content */}
         <div className="container mx-auto max-w-4xl px-6 text-center md:text-justify">
-          <h1 className="text-5xl font-bold mb-6 text-white">About Me</h1>
+          <BlurText
+                text="About Me"
+                delay={150}
+                animateBy="words"
+                direction="top"
+                onAnimationComplete={handleAnimationComplete}
+                className="text-5xl font-bold mb-6 text-white"
+            />
           {/* <img src="/assets/logo-cobra.svg" alt="Logo from freepik" className="w-40 mt-5 mb-5 " /> */}
           <p className="text-lg leading-relaxed text-gray-300">
             Hi there! 👋 I'm <span className="font-semibold text-white">Reza Chairul Manam</span>, I'm currently living in Lampung, Indonesia. 
