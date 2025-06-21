@@ -29,7 +29,7 @@ export default function Contact() {
                 animateBy="words"
                 direction="top"
                 onAnimationComplete={handleAnimationComplete}
-                className="text-5xl font-bold mb-6 text-white"
+                className="text-5xl font-bold mb-2 text-white"
             />
         
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-8 p-10">
