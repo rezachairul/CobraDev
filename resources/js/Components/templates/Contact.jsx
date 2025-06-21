@@ -29,10 +29,10 @@ export default function Contact() {
                 animateBy="words"
                 direction="top"
                 onAnimationComplete={handleAnimationComplete}
-                className="text-5xl font-bold mb-2 text-white"
+                className="text-5xl font-bold mb-0 text-white"
             />
         
-        <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-8 p-10">
+        <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-4 p-4">
             {/* Kolom Kiri - Earth 3D */}
             <div className="w-full md:w-1/2 h-[400px] flex items-center justify-center">
                 {/* <Earth /> */}
@@ -52,7 +52,7 @@ export default function Contact() {
             </div>
         </div>
         {/* Copyright Section */}
-        <div className="mt-8 text-center text-gray-400">
+        <div className="mt-0 text-center text-gray-400">
             <p className="flex justify-center items-center gap-1">
                 <IconCopyright size={16} /> {new Date().getFullYear()} <span className="text-purple-900 font-semibold hover:text-purple-700"><a href="/">CobraDev</a></span> All Rights Reserved.
             </p>
