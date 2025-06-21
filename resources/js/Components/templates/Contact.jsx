@@ -37,7 +37,8 @@ export default function Contact() {
             <div className="w-full md:w-1/2 h-[400px] flex items-center justify-center">
                 {/* <Earth /> */}
                 <Canvas>
-                    <ambientLight/>
+                    <ambientLight intensity={0.5} />
+                    <directionalLight position={[5, 5, 5]} />
                     <OrbitControls enableZoom={false}/>
                     <Suspense fallback={null}>
                       <Earth />
