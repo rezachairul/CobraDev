@@ -43,7 +43,7 @@ export default function About() {
           <div className="text-lg leading-relaxed text-gray-300 md:text-justify">
             <p>
               Hi there! 👋 I'm <span className="font-semibold text-white">Reza Chairul Manam</span>, I'm currently living in Lampung, Indonesia.
-              I'm an Informatics Engineering student at the Sumatra Institute of Technology who loves everything about WebGIS and web development.
+              I'm an Informatics Engineering student at the Institut Teknologi Sumatera who loves everything about WebGIS and web development.
               Currently, I'm working with
               <span className="text-rose-400"> <a href="https://laravel.com/">Laravel</a></span>,
               <span className="text-blue-400"> <a href="https://react.dev/">React</a></span>,
