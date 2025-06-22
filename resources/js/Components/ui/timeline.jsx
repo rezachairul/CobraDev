@@ -43,8 +43,8 @@ export const Timeline = ({
             onAnimationComplete={handleAnimationComplete}
             className="text-5xl font-bold mb-6 text-white"
         />
-        <p className="max-w-2xl mx-auto text-gray-300">
-            Every project I work on is a combination of problem solving and visual touch. These are the works that reflect my interests and expertise in the world of technology.
+        <p className="max-w-2xl mx-auto text-gray-300 text-justify">
+          Every project I work on is a combination of problem solving and visual touch. These are the works that reflect my interests and expertise in the world of technology.
         </p>
       </div>
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">

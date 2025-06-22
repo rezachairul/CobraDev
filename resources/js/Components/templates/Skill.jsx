@@ -50,7 +50,7 @@ export default function Skill() {
                 onAnimationComplete={handleAnimationComplete}
                 className="text-5xl font-bold mb-6 text-white"
             />
-            <p className="max-w-2xl mx-auto text-gray-300">
+            <p className="max-w-2xl mx-auto text-gray-300 text-justify">
                 I have experience in web programming, particularly in the field of WebGIS,
                 as well as skills in visual design and media processing. Below are the tools and technologies I frequently use:
             </p>
