@@ -19,21 +19,38 @@ export const FloatingDock = ({ items, desktopClassName, mobileClassName }) => {
 const FloatingDockMobile = ({ items, className }) => {
   const [open, setOpen] = useState(false);
   return (
-    (<div className={cn("relative block md:hidden", className)}>
+    <div className={cn("fixed right-4 bottom-4 z-50 md:hidden", className)}>
       <AnimatePresence>
         {open && (
-            <motion.div layoutId="nav" className="absolute bottom-full mb-2 inset-x-0 flex flex-col gap-2">
-                {items.map((item, idx) => (
-                <motion.div key={item.title} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0, }} exit={{ opacity: 0, y: 10, transition: { delay: idx * 0.05, }, }} transition={{ delay: (items.length - 1 - idx) * 0.05 }}>
-                </motion.div>
-                ))}
+          <motion.div 
+            layoutId="nav"
+            className="absolute bottom-full mb-2 right-0 flex flex-col gap-2 items-end"
+          >
+            {items.map((item, idx) => (
+              <motion.a
+                key={item.title}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 10, transition: { delay: idx * 0.05 } }}
+                transition={{ delay: (items.length - 1 - idx) * 0.05 }}
+                className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-800 flex items-center justify-center"
+              >
+                {item.icon}
+              </motion.a>
+            ))}
           </motion.div>
         )}
       </AnimatePresence>
-      <button onClick={() => setOpen(!open)} className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-800 flex items-center justify-center">
+      <button
+        onClick={() => setOpen(!open)}
+        className="h-12 w-12 rounded-full bg-gray-50 dark:bg-neutral-800 flex items-center justify-center shadow-lg"
+      >
         <IconLayoutNavbarCollapse className="h-5 w-5 text-neutral-500 dark:text-neutral-400" />
       </button>
-    </div>)
+    </div>
   );
 };
 

@@ -72,7 +72,7 @@ export default function Hero() {
       <TypewriterEffectSmooth words={words} className="font-sans mt-4 mb-8 md:mt-6 md:mb-12" />
 
       <FloatingDock
-        mobileClassName="translate-y-10"
+        mobileClassName=""
         className="mb-10 md:mb-14"
         items={links}
       />
