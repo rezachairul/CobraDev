@@ -40,7 +40,7 @@ export default function About() {
           </div>
 
           {/* Paragraf di kanan */}
-          <div className="text-lg leading-relaxed text-gray-300 md:text-justify">
+          <div className="text-lg leading-relaxed text-gray-300 text-justify md:text-justify">
             <p>
               Hi there! 👋 I'm <span className="font-semibold text-white">Reza Chairul Manam</span>, I'm currently living in Lampung, Indonesia.
               I'm an Informatics Engineering student at the Institut Teknologi Sumatera who loves everything about WebGIS and web development.
