@@ -47,7 +47,7 @@ export default function Navbar() {
 
             {/* Mobile Menu */}
             {isMenuOpen && (
-                <div className="md:hidden mt-4 bg-black bg-opacity-90 rounded-lg p-4 space-y-4">
+                <div className="md:hidden mt-4 bg-black/70 backdrop-blur-sm rounded-lg p-4 space-y-4">
                     {navItems.map((item) => (
                         <ScrollLink
                             key={item.to}
