@@ -14,7 +14,7 @@ export default function Works() {
         title: "2025",
         content: (
           <div>
-            <div className="grid grid-cols-2 gap-4 auto-rows-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 auto-rows-auto">
 
               <CardContainer className="inter-var">
                 <CardBody
@@ -147,7 +147,7 @@ export default function Works() {
         title: "2024",
         content: (
           <div>
-            <div className="grid grid-cols-2 gap-4 auto-rows-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 auto-rows-auto">
                        
               <CardContainer className="inter-var">
                 <CardBody
@@ -239,7 +239,7 @@ export default function Works() {
         title: "Early 2023",
         content: (
           <div>
-            <div className="grid grid-cols-2 gap-4 auto-rows-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 auto-rows-auto">
 
               <CardContainer className="inter-var">
                 <CardBody
