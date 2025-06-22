@@ -8,6 +8,10 @@ const handleAnimationComplete = () => {
   console.log('Animation completed!');
 };
 
+import {
+  IconBrandGithub
+} from "@tabler/icons-react";
+
 export default function Works() {
     const data = [
       {
@@ -49,9 +53,14 @@ export default function Works() {
                     </CardItem>
                     <CardItem
                       translateZ={20}
-                      as="button"
-                      className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
-                      Sign up
+                      as="a"
+                      href="https://github.com/rezachairul/project_kak_moessss.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                    >
+                      <IconBrandGithub size={16} />
+                      GitHub
                     </CardItem>
                   </div>
                 </CardBody>
@@ -83,16 +92,21 @@ export default function Works() {
                     <CardItem
                       translateZ={20}
                       as="a"
-                      href="#https://github.com/rezachairul/Project-Tubes-PBO-2025.git"
+                      href="https://github.com/rezachairul/Project-Tubes-PBO-2025.git"
                       target="__blank"
                       className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white">
                       Try now →
                     </CardItem>
                     <CardItem
                       translateZ={20}
-                      as="button"
-                      className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
-                      Sign up
+                      as="a"
+                      href="#https://github.com/rezachairul/Project-Tubes-PBO-2025.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                    >
+                      <IconBrandGithub size={16} />
+                      GitHub
                     </CardItem>
                   </div>
                 </CardBody>
@@ -131,9 +145,14 @@ export default function Works() {
                     </CardItem>
                     <CardItem
                       translateZ={20}
-                      as="button"
-                      className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
-                      Sign up
+                      as="a"
+                      href="https://github.com/TaufiqAhmadMaulana/sistem-invenK4.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                    >
+                      <IconBrandGithub size={16} />
+                      GitHub
                     </CardItem>
                   </div>
                 </CardBody>
@@ -182,9 +201,14 @@ export default function Works() {
                     </CardItem>
                     <CardItem
                       translateZ={20}
-                      as="button"
-                      className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
-                      Sign up
+                      as="a"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                    >
+                      <IconBrandGithub size={16} />
+                      GitHub
                     </CardItem>
                   </div>
                 </CardBody>
@@ -223,9 +247,14 @@ export default function Works() {
                     </CardItem>
                     <CardItem
                       translateZ={20}
-                      as="button"
-                      className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
-                      Sign up
+                      as="a"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                    >
+                      <IconBrandGithub size={16} />
+                      GitHub
                     </CardItem>
                   </div>
                 </CardBody>
@@ -274,9 +303,14 @@ export default function Works() {
                     </CardItem>
                     <CardItem
                       translateZ={20}
-                      as="button"
-                      className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
-                      Sign up
+                      as="a"
+                      href="https://github.com/rezachairul/KSI_RB_Tubes-Kel-3.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                    >
+                      <IconBrandGithub size={16} />
+                      GitHub
                     </CardItem>
                   </div>
                 </CardBody>
@@ -315,9 +349,14 @@ export default function Works() {
                     </CardItem>
                     <CardItem
                       translateZ={20}
-                      as="button"
-                      className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
-                      Sign up
+                      as="a"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                    >
+                      <IconBrandGithub size={16} />
+                      GitHub
                     </CardItem>
                   </div>
                 </CardBody>
@@ -356,9 +395,14 @@ export default function Works() {
                     </CardItem>
                     <CardItem
                       translateZ={20}
-                      as="button"
-                      className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
-                      Sign up
+                      as="a"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                    >
+                      <IconBrandGithub size={16} />
+                      GitHub
                     </CardItem>
                   </div>
                 </CardBody>
